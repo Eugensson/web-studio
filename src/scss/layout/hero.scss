@@ -1,0 +1,30 @@
+.hero {
+    margin: 0 auto;
+    max-width: 1600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--hero-background-color);
+    background-image: var(--gradient), url('/images/hero/hero-desktop@1x.jpg');
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 200px 0;
+    text-align: center;
+}
+
+.hero__title {
+    margin-bottom: 30px;
+    width: 700px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+}

@@ -1,0 +1,24 @@
+.preference__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.preference__item {
+    width: calc((100% - 3*30px)/4);
+}
+
+.preference__subtitle {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.preference__descr {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--secondary-text-color);
+}

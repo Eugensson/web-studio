@@ -1,0 +1,42 @@
+:root {
+    --main-font: 'Roboto', sans-serif;
+    --logo-font: 'Raleway', sans-serif;
+
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-text-color: #2196f3;
+    --white-text-color: #ffffff;
+
+    --primary-background-color: #ffffff;
+    --secondary-background-color: #f5f4fa;
+    --hero-background-color: #c4c4c4;
+    --footer-background-color: #2f303a;
+
+    --color-link: #afb1b8;
+    --logo-color: #000000;
+    --footer-link-color: rgba(255, 255, 255, 0.6);
+    --gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    --accent-background-color: rgba(33, 150, 243, 0.9);
+    --footer-link-background-color: rgba(255, 255, 255, 0.1);
+    --button-primary-background-color: #2196f3;
+    --button-secondary-background-color: #f5f4fa;
+    --secondary-background-color-hero-button: #188ce8;
+    --secondary-background-color-hero-button-disabled: rgba(24, 140, 232, 0.5);
+    --portfolio-border: #eeeeee;
+    --button-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    --portfolio-elements-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    --header-border-color: #ececec;
+    --footer-border-input: rgba(255, 255, 255, 0.3);
+    --footer-placeholder-text: rgba(255, 255, 255, 0.6);
+    --modal-background-color: rgba(0, 0, 0, 0.2);
+    --modal-btn-background-color: rgba(0, 0, 0, 0.1);
+    --form-border-color: rgba(33, 33, 33, 0.2);
+    --focus-form-border-color: #2196f3;
+    --comment-textarea-color: rgba(117, 117, 117, 0.5);
+
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

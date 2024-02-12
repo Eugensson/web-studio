@@ -1,0 +1,41 @@
+.footer {
+    margin: 0 auto;
+    max-width: 1600px;
+    background-color: var(--footer-background-color);
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.address {
+    font-family: inherit;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--white-text-color);
+}
+
+.address__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    text-align: left;
+}
+
+.address__link {
+    color: var(--footer-link-color);
+
+    transition: color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }
+}

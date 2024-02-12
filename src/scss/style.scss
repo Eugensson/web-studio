@@ -1,2 +1,18 @@
 @import 'normalize.css';
-@import './variables.scss';
+
+@import './utils/hidden.scss';
+@import './utils/variables.scss';
+@import './base/base.scss';
+
+@import './components/logo.scss';
+@import './components/nav.scss';
+@import './components/btn.scss';
+@import './components/filter.scss';
+
+@import './layout/header.scss';
+@import './layout/hero.scss';
+@import './layout/preference.scss';
+@import './layout/activity.scss';
+@import './layout/team.scss';
+@import './layout/portfolio.scss';
+@import './layout/footer.scss';

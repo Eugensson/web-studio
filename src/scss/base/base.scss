@@ -1,0 +1,48 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--main-font);
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    // outline: 1px solid teal;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}

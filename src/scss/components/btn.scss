@@ -1,0 +1,74 @@
+%btn {
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    border: 0px solid transparent;
+    border-radius: 4px;
+}
+
+.hero__btn {
+    @extend %btn;
+
+    width: fit-content;
+    min-width: 200px;
+    margin: 0 auto;
+    padding: 10px 32px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--white-text-color);
+    background-color: var(--button-primary-background-color);
+
+    transition: background-color 250ms var(--timing-function);
+
+    &:disabled {
+        background-color: var(--secondary-background-color-hero-button-disabled);
+    }
+
+    &:hover,
+    &:focus {
+        background-color: var(--secondary-background-color-hero-button);
+    }
+}
+
+.submit__btn {
+    @extend %btn;
+
+    width: fit-content;
+    min-width: 200px;
+    margin: 0 auto;
+    padding: 10px 32px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--white-text-color);
+    background-color: var(--button-primary-background-color);
+
+    &:disabled {
+        cursor: auto;
+        background-color: var(--secondary-background-color-hero-button-disabled);
+    }
+}
+
+.filter__btn {
+    @extend %btn;
+
+    padding: 6px 22px;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: var(--button-secondary-background-color);
+
+    transition: color 250ms var(--timing-function),
+        background-color 250ms var(--timing-function),
+        box-shadow 250ms var(--timing-function);
+
+    &:hover,
+    &:focus,
+    &--active {
+        color: var(--white-text-color);
+        background-color: var(--button-primary-background-color);
+        box-shadow: var(--button-shadow);
+    }
+}

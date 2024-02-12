@@ -1,0 +1,21 @@
+.activity {
+    padding-top: 0;
+}
+
+.activity__title {
+    margin-bottom: 50px;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+}
+
+.activity__list {
+    display: flex;
+    gap: 30px;
+}
+
+.activity__item {
+    width: calc((100% - 2*30px)/3);
+}
