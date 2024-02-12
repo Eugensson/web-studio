@@ -21,4 +21,6 @@ const config = defineConfig(() => {
   };
 });
 
+console.log(resolve(__dirname, 'index.html'));
+
 export default config;
