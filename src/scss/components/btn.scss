@@ -72,3 +72,25 @@
         box-shadow: var(--button-shadow);
     }
 }
+
+.subscription__btn {
+    @extend %btn;
+
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 28px;
+    width: fit-content;
+    min-width: 200px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--white-text-color);
+    background-color: var(--button-primary-background-color);
+    transition: background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--secondary-background-color-hero-button);
+        box-shadow: var(--button-shadow);
+    }
+}

@@ -6,8 +6,9 @@
     color: var(--logo-color);
 
     &--footer {
-        display: inline-flex;
+        display: flex;
         margin-bottom: 20px;
+
         color: var(--white-text-color);
     }
 
@@ -19,8 +20,3 @@
 .logo--header {
     padding: 24px 0;
 }
-
-// .logo--footer {
-//     display: flex;
-//     text-align: center;
-// }

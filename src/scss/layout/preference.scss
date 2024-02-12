@@ -8,6 +8,16 @@
     width: calc((100% - 3*30px)/4);
 }
 
+.preference__icon {
+    display: flex;
+    justify-content: center;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+
+    background-color: var(--secondary-background-color);
+    border-radius: 4px;
+}
+
 .preference__subtitle {
     margin-bottom: 10px;
 
