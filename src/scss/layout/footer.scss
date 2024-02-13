@@ -4,15 +4,28 @@
 
 .footer__container {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: baseline;
-    flex-wrap: wrap;
-    gap: 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
 
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+
+    @media screen and (min-width: 768px) {
+        justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1200px) {
+        justify-content: flex-start;
+        gap: 0;
+    }
 }
 
 .address {
@@ -28,7 +41,9 @@
     flex-direction: column;
     gap: 12px;
 
-    text-align: left;
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .address__link {
@@ -43,7 +58,9 @@
 }
 
 .footer__social {
-    margin-left: 70px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+    }
 }
 
 .footer__title {
@@ -52,9 +69,12 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    text-align: left;
     text-transform: uppercase;
     color: var(--white-text-color);
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .footer__list {
@@ -80,23 +100,35 @@
 }
 
 .subscription {
-    width: 570px;
-    margin-left: auto;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 570px;
+        margin-left: auto;
+    }
 }
 
 .subscription__form {
-    display: flex;
-    align-items: center;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .subscription__label {
-    margin-right: 12px;
+    @media screen and (min-width: 1200px) {
+        margin-right: 12px;
+    }
 }
 
 .subscription__input {
     display: block;
-    width: 358px;
-    margin: 0;
+    width: 100%;
+    margin-bottom: 20px;
     padding: 15px 16px;
 
     color: var(--white-text-color);
@@ -109,6 +141,11 @@
         font-size: 16px;
         line-height: 1.25;
         color: var(--footer-placeholder-text);
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 358px;
+        margin: 0;
     }
 }
 

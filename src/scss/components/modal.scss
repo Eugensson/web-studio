@@ -23,8 +23,8 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
 
-    width: 528px;
-    height: 581px;
+    width: 100%;
+    height: 100%;
     padding: 40px;
 
     background-color: var(--primary-background-color);
@@ -35,6 +35,16 @@
 
     .backdrop.backdrop--hidden & {
         transform: translate(-50%, -50%) scale(0.1);
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        height: 609px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
     }
 }
 
@@ -153,13 +163,19 @@
     position: relative;
     display: flex;
     gap: 10px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
 
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+
+    @media screen and (min-width: 1200px) {
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .license__input {

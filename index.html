@@ -8,7 +8,7 @@
   <body>
     <header class="header">
       <div class="container nav__container">
-        <a href="/web-studio/" class="logo"><span class="logo--accent">Web</span>Studio</a>
+        <a href="/web-studio/" class="logo--header"><span class="logo--accent">Web</span>Studio</a>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item"><a class="nav__link nav__link--current" href="/web-studio/">Студія</a></li>
@@ -32,14 +32,14 @@
               +38 096 111 11 11</a>
           </li>
         </ul>
-      </div>      
+      </div>
     </header>
     <main>
       <section class="hero">
         <div class="container hero__container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero__btn" data-modal-open>Замовити послугу</button>
-        </div>        
+        </div>
       </section>
       <section class="container section preference">
         <h2 class="visually-hidden">Переваги нашої компанії</h2>
@@ -87,19 +87,37 @@
         <ul class="activity__list">
           <li class="activity__item">
             <div class="activity__thumb">
-              <img src="/images/activity/desktop-desktop@1x.jpg" width="370" height="294" alt="Розробник за комьютером">
+              <picture>
+                <source srcset="/images/activity/desktop-desktop@1x.webp 1x, ./images/activity/desktop-desktop@2x.webp 2x"
+                  type="image/webp">
+                <source srcset="/images/activity/desktop-desktop@1x.jpg 1x, ./images/activity/desktop-desktop@1x.jpg 2x"
+                  type="image/jpeg">
+                <img src="/images/activity/desktop-desktop@1x.jpg" width="370" height="294" alt="Розробник за комьютером">
+              </picture>
               <h3 class="activity__subtitle">Десктопні додатки</h3>
             </div>            
           </li>
           <li class="activity__item">
             <div class="activity__thumb">
-              <img src="/images/activity/mobile-desktop@1x.jpg" width="370" height="294" alt="Розробник з гаджетом">
+              <picture>
+                <source srcset="/images/activity/mobile-desktop@1x.webp 1x, ./images/activity/mobile-desktop@2x.webp 2x"
+                  type="image/webp">
+                <source srcset="/images/activity/mobile-desktop@1x.jpg 1x, ./images/activity/mobile-desktop@2x.jpg 2x"
+                  type="image/jpeg">
+                <img src="/images/activity/mobile-desktop@1x.jpg" width="370" height="294" alt="Розробник з гаджетом">
+              </picture>
               <h3 class="activity__subtitle">Мобільні додатки</h3>
             </div>            
           </li>
           <li class="activity__item">
             <div class="activity__thumb">
-              <img src="/images/activity/design-desktop@1x.jpg" width="370" height="294" alt="Дизайнер підбирає кольорову палітру">
+              <picture>
+                <source srcset="/images/activity/design-desktop@1x.webp 1x, ./images/activity/design-desktop@2x.webp 2x"
+                  type="image/webp">
+                <source srcset="/images/activity/design-desktop@1x.jpg 1x, ./images/activity/design-desktop@2x.jpg 2x"
+                  type="image/jpeg">
+                <img src="/images/activity/design-desktop@1x.jpg" width="370" height="294" alt="Дизайнер підбирає кольорову палітру">
+              </picture>
               <h3 class="activity__subtitle">Дизайнерські рішення</h3>
             </div>            
           </li>
@@ -110,7 +128,21 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="/images/team/designer-desktop@1x.jpg" width="270" height="260" alt="Світлина дизайнера продукта">
+              <picture>
+                <source srcset="/images/team/designer-desktop@1x.webp 1x, /images/team/designer-desktop@2x.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="/images/team/designer-tablet@1x.webp 1x, /images/team/designer-tablet@2x.webp 2x"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="/images/team/designer-mobile@1x.webp 1x, /images/team/designer-mobile@2x.webp 2x"
+                  media="(max-width: 767px)" type="image/webp">
+                <source srcset="/images/team/designer-desktop@1x.jpg 1x, /images/team/designer-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)" type="image/jpeg">
+                <source srcset="/images/team/designer-tablet@1x.jpg 1x, /images/team/designer-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)" type="image/jpeg">
+                <source srcset="/images/team/designer-mobile@1x.jpg 1x, ./images/team/designer-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)" type="image/jpeg">
+                <img src="/images/team/designer-desktop@1x.jpg" width="270" height="260" alt="Світлина дизайнера продукта">
+              </picture>
               <div class="team__descr">
                 <h3 class="team__subtitle">Ігор Дем'яненко</h3>
                 <p class="team__text" lang="en">Product Designer</p>
@@ -148,7 +180,21 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="/images/team/developer-desktop@1x.jpg" width="270" height="260" alt="Світлина розробника">
+              <picture>
+                <source srcset="/images/team/developer-desktop@1x.webp 1x, /images/team/developer-desktop@2x.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="/images/team/developer-tablet@1x.webp 1x, /images/team/developer-tablet@2x.webp 2x"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="/images/team/developer-mobile@1x.webp 1x, /images/team/developer-mobile@2x.webp 2x"
+                  media="(max-width: 767px)" type="image/webp">
+                <source srcset="/images/team/developer-desktop@1x.jpg 1x, /images/team/developer-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)" type="image/jpeg">
+                <source srcset="/images/team/developer-tablet@1x.jpg 1x, /images/team/developer-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)" type="image/jpeg">
+                <source srcset="/images/team/developer-mobile@1x.jpg 1x, /images/team/developer-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)" type="image/jpeg">
+                <img src="/images/team/developer-desktop@1x.jpg" width="270" height="260" alt="Світлина розробника">
+              </picture>
               <div class="team__descr">
                 <h3 class="team__subtitle">Ольга Рєпіна</h3>
                 <p class="team__text" lang="en">Frontend Developer</p>
@@ -186,7 +232,21 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="/images/team/marketing-desktop@1x.jpg" width="270" height="260" alt="Світлина маркетолога">
+              <picture>
+                <source srcset="/images/team/marketing-desktop@1x.webp 1x, /images/team/marketing-desktop@2x.webp 2x"
+                  media="(min-width: 1200px)" type="image/webp">
+                <source srcset="/images/team/marketing-tablet@1x.webp 1x, /images/team/marketing-tablet@2x.webp 2x"
+                  media="(min-width: 768px)" type="image/webp">
+                <source srcset="/images/team/marketing-mobile@1x.webp 1x, /images/team/marketing-mobile@2x.webp 2x"
+                  media="(max-width: 767px)" type="image/webp">
+                <source srcset="/images/team/marketing-desktop@1x.jpg 1x, /images/team/marketing-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)" type="image/jpeg">
+                <source srcset="/images/team/marketing-tablet@1x.jpg 1x, /images/team/marketing-tablet@2x.jpg 2x"
+                  media="(min-width: 768px)" type="image/jpeg">
+                <source srcset="/images/team/marketing-mobile@1x.jpg 1x, /images/team/marketing-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)" type="image/jpeg">
+                <img src="/images/team/marketing-desktop@1x.jpg" width="270" height="260" alt="Світлина маркетолога">
+              </picture>
               <div class="team__descr">
                 <h3 class="team__subtitle">Микола Тарасов</h3>
                 <p class="team__text" lang="en">Marketing</p>
@@ -224,7 +284,21 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="/images/team/ui-desktop@1x.jpg" width="270" height="260" alt="Світлина дизайнера">
+              <picture>
+                <source srcset="/images/team/ui-desktop@1x.webp 1x, /images/team/ui-desktop@2x.webp 2x" media="(min-width: 1200px)"
+                  type="image/webp">
+                <source srcset="/images/team/ui-tablet@1x.webp 1x, /images/team/ui-tablet@2x.webp 2x" media="(min-width: 768px)"
+                  type="image/webp">
+                <source srcset="/images/team/ui-mobile@1x.webp 1x, /images/team/ui-mobile@2x.webp 2x" media="(max-width: 767px)"
+                  type="image/webp">
+                <source srcset="/images/team/ui-desktop@1x.jpg 1x, /images/team/ui-desktop@2x.jpg 2x" media="(min-width: 1200px)"
+                  type="image/jpeg">
+                <source srcset="/images/team/ui-tablet@1x.jpg 1x, /images/team/ui-tablet@2x.jpg 2x" media="(min-width: 768px)"
+                  type="image/jpeg">
+                <source srcset="/images/team/ui-mobile@1x.jpg 1x, /images/team/ui-mobile@2x.jpg 2x" media="(max-width: 767px)"
+                  type="image/jpeg">
+                <img src="/images/team/ui-desktop@1x.jpg" width="270" height="260" alt="Світлина дизайнера">
+              </picture>
               <div class="team__descr">
                 <h3 class="team__subtitle">Михайло Єрмаков</h3>
                 <p class="team__text" lang="en">UI Designer</p>
@@ -262,7 +336,7 @@
               </div>
             </li>
           </ul>
-        </div>        
+        </div>
       </section>
       <section class="container section">
         <h2 class="clients__title">Постійні клієнти</h2>
@@ -318,7 +392,7 @@
     <footer class="footer">
       <div class="container footer__container">
         <div>
-          <a href="/web-studio/" lang="en" class="logo logo--footer"><span class="logo--accent">Web</span>Studio</a>
+          <a href="/web-studio/" lang="en" class="logo--footer"><span class="logo--accent">Web</span>Studio</a>
           <address>
             <ul class="list address__list">
               <li class="address__item"><a class="link address" href="https://maps.app.goo.gl/8uB5yxPXKVD9QiLn8"

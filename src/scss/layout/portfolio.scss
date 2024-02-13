@@ -1,18 +1,34 @@
 .portfolio__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    display: block;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 }
 
 .portfolio__item {
-    width: calc((100% - 2*30px)/3);
-    margin-bottom: 0;
+    width: 100%;
 
     transition: box-shadow 250ms var(--timing-function);
 
     &:hover,
     &:focus {
         box-shadow: var(--portfolio-elements-shadow);
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px)/2);
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 2*30px)/3);
     }
 }
 
@@ -57,7 +73,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.06em;
     color: var(--primary-text-color);
 }
 
