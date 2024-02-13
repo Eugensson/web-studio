@@ -18,6 +18,7 @@
 }
 
 .nav__link {
+    position: relative;
     padding: 32px 0;
 
     font-weight: 500;
@@ -32,6 +33,23 @@
     &:focus {
         color: var(--accent-text-color);
     }
+}
+
+.nav__link::after {
+    position: absolute;
+    content: '';
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    opacity: 0;
+
+    border-radius: 2px;
+    background-color: var(--button-primary-background-color);
+}
+
+.nav__link--current.nav__link::after {
+    opacity: 1;
 }
 
 .nav__link--current {

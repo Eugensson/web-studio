@@ -38,7 +38,7 @@
       <section class="hero">
         <div class="container hero__container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero__btn">Замовити послугу</button>
+          <button type="button" class="hero__btn" data-modal-open>Замовити послугу</button>
         </div>        
       </section>
       <section class="container section preference">
@@ -86,13 +86,22 @@
         <h2 class="activity__title">Чим ми займаємося</h2>
         <ul class="activity__list">
           <li class="activity__item">
-            <img src="/images/activity/desktop-desktop@1x.jpg" width="370" height="294" alt="Розробник за комьютером">
+            <div class="activity__thumb">
+              <img src="/images/activity/desktop-desktop@1x.jpg" width="370" height="294" alt="Розробник за комьютером">
+              <h3 class="activity__subtitle">Десктопні додатки</h3>
+            </div>            
           </li>
           <li class="activity__item">
-            <img src="/images/activity/mobile-desktop@1x.jpg" width="370" height="294" alt="Розробник з гаджетом">
+            <div class="activity__thumb">
+              <img src="/images/activity/mobile-desktop@1x.jpg" width="370" height="294" alt="Розробник з гаджетом">
+              <h3 class="activity__subtitle">Мобільні додатки</h3>
+            </div>            
           </li>
           <li class="activity__item">
-            <img src="/images/activity/design-desktop@1x.jpg" width="370" height="294" alt="Дизайнер підбирає кольорову палітру">
+            <div class="activity__thumb">
+              <img src="/images/activity/design-desktop@1x.jpg" width="370" height="294" alt="Дизайнер підбирає кольорову палітру">
+              <h3 class="activity__subtitle">Дизайнерські рішення</h3>
+            </div>            
           </li>
         </ul>
       </section>
@@ -376,6 +385,59 @@
         </div>
       </div>
     </footer>
+    <div class="js-backdrop backdrop backdrop--hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal__btn" data-modal-close>
+          <svg width="18" height="18">
+            <use href="./images/icons.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form name="contact-form" class="js-form modal__form">
+          <label class="modal__group">
+            <span class="modal__label">Ім'я</span>
+            <span class="modal__ctrlWrapper">
+              <input type="text" class="modal__input">
+              <svg class="modal__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal__group">
+            <span class="modal__label">Телефон</span>
+            <span class="modal__ctrlWrapper">
+              <input type="tel" class="modal__input">
+              <svg class="modal__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal__group">
+            <span class="modal__label">Пошта</span>
+            <span class="modal__ctrlWrapper">
+              <input type="email" class="modal__input">
+              <svg class="modal__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </span>
+          </label>
+          <label>
+            <span class="modal__comments">Коментар</span>
+            <textarea class="modal__textarea" name="person-comment" placeholder="Введіть текст"></textarea>
+          </label>
+          <label class="license__label">
+            <input class="js-license license__input" type="checkbox">
+            <svg class="license__icon" width="16" height="15">
+              <use href="./images/icons.svg#icon-checked"></use>
+            </svg>
+            <span class="license__text">Погоджуюся з розсилкою та приймаю
+              <a class="license__link" href="">Умови договору</a>
+            </span>
+          </label>
+          <button class="js-submitBtn submit__btn" type="submit" disabled>Відправити</button>
+        </form>
+      </div>
+    </div>
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>
