@@ -1,29 +1,50 @@
 .nav__container {
+    position: relative;
+
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .nav__list {
     display: flex;
-    gap: 50px;
+    flex-direction: column;
+    gap: 32px;
 
-    margin-left: 95px;
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        gap: 50px;
+        margin-left: 88px;
+    }
+
+    @media screen and (min-width: 768px) {
+        gap: 50px;
+        margin-left: 100px;
+    }
 }
 
 .auth__list {
     display: flex;
-    gap: 40px;
+    flex-direction: column-reverse;
+    gap: 32px;
 
-    margin-left: auto;
+    @media screen and (min-width: 768px) {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        gap: 40px;
+    }
 }
 
 .nav__link {
     position: relative;
-    padding: 32px 0;
 
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 40px;
+    line-height: 1.18;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
 
@@ -32,6 +53,12 @@
     &:hover,
     &:focus {
         color: var(--accent-text-color);
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 32px 0;
+        font-size: 14px;
+        line-height: 1.14;
     }
 }
 
@@ -49,7 +76,9 @@
 }
 
 .nav__link--current.nav__link::after {
-    opacity: 1;
+    @media screen and (min-width: 768px) {
+        opacity: 1;
+    }
 }
 
 .nav__link--current {
@@ -57,15 +86,9 @@
 }
 
 .auth__link {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    padding: 32px 0;
-
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.17;
+    font-size: 18px;
+    line-height: 1.18;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
 
@@ -75,10 +98,27 @@
     &:focus {
         color: var(--accent-text-color);
     }
-}
 
-.auth__link {
-    color: var(--secondary-text-color);
+    @media screen and (min-width: 360px) {
+        font-size: 24px;
+    }
+
+    @media screen and (min-width: 430px) {
+        font-size: 34px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        font-size: 14px;
+        line-height: 1.17;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 32px 0;
+    }
 }
 
 .auth__icon {

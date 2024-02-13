@@ -9,29 +9,59 @@
     <header class="header">
       <div class="container nav__container">
         <a href="/web-studio/" class="logo--header"><span class="logo--accent">Web</span>Studio</a>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link nav__link--current" href="/web-studio/">Студія</a></li>
-            <li class="nav__item"><a class="nav__link" href="/web-studio/portfolio/">Портфоліо</a></li>
-            <li class="nav__item"><a class="nav__link" href="/web-studio/">Контакти</a></li>
+        <button type="button" class="menu__btn--open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40" aria-label="Кнопка відкриття мобільного меню">
+            <use href="/images/icons.svg#icon-open-menu"></use>
+          </svg>
+        </button>
+        <div class="menu__container js-menu-container" id="mobile-menu">
+          <button type="button" class="menu__button--close js-close-menu" aria-expanded="true" aria-controls="mobile-menu">
+            <svg width="40" height="40" aria-label="Кнопка закриття мобільного меню">
+              <use href="/images/icons.svg#icon-close-menu"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link nav__link--current" href="/web-studio/">Студія</a></li>
+              <li class="nav__item"><a class="nav__link" href="/web-studio/portfolio/">Портфоліо</a></li>
+              <li class="nav__item"><a class="nav__link" href="/web-studio/">Контакти</a></li>
+            </ul>
+          </nav>
+          <ul class="auth__list">
+            <li class="auth__item"><a class="auth__link" href="mailto:info@devstudio.com"
+                aria-label="Написати електронного листа на info@devstudio.com">
+                <svg class="auth__icon" width="16" height="12">
+                  <use href="/images/icons.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com</a>
+            </li>
+            <li class="auth__item"><a class="auth__link" href="tel:+380961111111"
+                aria-label="Здійснити телефонний дзвінок за номером +38 096 111 11 11">
+                <svg class="auth__icon" width="10" height="16">
+                  <use href="/images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a>
+            </li>
           </ul>
-        </nav>
-        <ul class="auth__list">
-          <li class="auth__item"><a class="auth__link" href="mailto:info@devstudio.com"
-              aria-label="Написати електронного листа на info@devstudio.com">
-              <svg class="auth__icon" width="16" height="12">
-                <use href="/images/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a>
-          </li>
-          <li class="auth__item"><a class="auth__link" href="tel:+380961111111"
-              aria-label="Здійснити телефонний дзвінок за номером +38 096 111 11 11">
-              <svg class="auth__icon" width="10" height="16">
-                <use href="/images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a>
-          </li>
-        </ul>
+          <ul class="menu-social__list">
+            <li class="menu-social__item">
+              <a class="link menu-social__link" href="https://www.instagram.com/" target="_blank"
+                aria-label="Перейти на сторінку Instagram">Instagram</a>
+            </li>
+            <li class="menu-social__item">
+              <a class="link menu-social__link" href="https://twitter.com/" target="_blank"
+                aria-label="Перейти на сторінку Twitter">Twitter</a>
+            </li>
+            <li class="menu-social__item">
+              <a class="link menu-social__link" href="https://www.facebook.com/" target="_blank"
+                aria-label="Перейти на сторінку Facebook">Facebook</a>
+            </li>
+            <li class="menu-social__item">
+              <a class="link menu-social__link" href="https://www.linkedin.com/" target="_blank"
+                aria-label="Перейти на сторінку LinkedIn">LinkedIn</a>
+            </li>
+          </ul>
+        </div>        
       </div>
     </header>
     <main>
